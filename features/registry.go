@@ -141,6 +141,13 @@ var Registry = Plugins{
 		Description: "Limit rate of requests",
 		DocsURL:     "/docs/ratelimit",
 	},
+	{
+		Type:        DirectivePlugin,
+		Name:        "awslambda",
+		Import:      "github.com/coopernurse/caddy-awslambda",
+		Description: "Gateways requests to AWS Lambda functions",
+		DocsURL:     "/docs/awslambda",
+	},
 
 	// DNS providers
 	{
