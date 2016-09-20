@@ -94,6 +94,13 @@ var Registry = Plugins{
 	},
 	{
 		Type:        DirectivePlugin,
+		Name:        "multipass",
+		Import:      "github.com/namsral/multipass/caddy",
+		Description: "Authorization by email",
+		DocsURL:     "/docs/multipass",
+	},
+	{
+		Type:        DirectivePlugin,
 		Name:        "jsonp",
 		Import:      "github.com/pschlump/caddy-jsonp",
 		Description: "Wrap JSON responses as JSONP",
