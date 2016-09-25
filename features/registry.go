@@ -155,6 +155,13 @@ var Registry = Plugins{
 		Description: "Gateways requests to AWS Lambda functions",
 		DocsURL:     "/docs/awslambda",
 	},
+	{
+		Type:        DirectivePlugin,
+		Name:        "expires",
+		Import:      "github.com/epicagency/caddy-expires",
+		Description: "Add expiration headers to assets",
+		DocsURL:     "/docs/expires",
+	},
 
 	// DNS providers
 	{
