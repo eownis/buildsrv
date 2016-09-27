@@ -33,6 +33,12 @@ var Registry = Plugins{
 		Description: "HTTP server core; everything most sites need",
 		Required:    true,
 	},
+	{
+		Type:        ServerPlugin,
+		Name:        "DNS",
+		Import:      "github.com/miekg/coredns/core",
+		Description: "DNS server core (see https://coredns.io)",
+	},
 
 	// Directives
 	{
