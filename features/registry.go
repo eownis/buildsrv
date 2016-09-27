@@ -214,6 +214,11 @@ var Registry = Plugins{
 		Name:   "vultr",
 		Import: "github.com/caddyserver/dnsproviders/vultr",
 	},
+	{
+		Type:   DNSProviderPlugin,
+		Name:   "linode",
+		Import: "github.com/caddyserver/dnsproviders/linode",
+	},
 }
 
 // Plugins is a list of plugins that can determine
