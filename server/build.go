@@ -72,9 +72,9 @@ func (b *Build) Build() error {
 		b.OutputFile,
 	}
 	if b.DownloadFileCompression == CompressZip {
-		err = archiver.Zip(b.DownloadFile, fileList)
+		err = archiver.Zip.Make(b.DownloadFile, fileList)
 	} else if b.DownloadFileCompression == CompressTarGz {
-		err = archiver.TarGz(b.DownloadFile, fileList)
+		err = archiver.TarGz.Make(b.DownloadFile, fileList)
 	} else {
 		return fmt.Errorf("unknown compress type %v", b.DownloadFileCompression)
 	}
