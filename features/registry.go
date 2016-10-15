@@ -168,6 +168,13 @@ var Registry = Plugins{
 		Description: "Add expiration headers to assets",
 		DocsURL:     "/docs/expires",
 	},
+	{
+		Type:        DirectivePlugin,
+		Name:        "filter",
+		Import:      "github.com/echocat/caddy-filter",
+		Description: "Filter response body contents",
+		DocsURL:     "/docs/filter",
+	},
 
 	// DNS providers
 	{
