@@ -214,6 +214,11 @@ var Registry = Plugins{
 	},
 	{
 		Type:   DNSProviderPlugin,
+		Name:   "ovh",
+		Import: "github.com/caddyserver/dnsproviders/ovh",
+	},
+	{
+		Type:   DNSProviderPlugin,
 		Name:   "rfc2136",
 		Import: "github.com/caddyserver/dnsproviders/rfc2136",
 	},
